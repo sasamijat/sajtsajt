@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mobilni servis Merkur</title>
+	<link rel="stylesheet" href="csskod.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="script.js">
+function mouseOver()
+{
+document.b1.src ="posta.jpg"
+}
+function mouseOut()
+{
+document.b1.src ="posta2.jpg"
+}
+</script>
+</head>
+<body>
+
+	<div class="nav">
+		<img src="mobilni.png">
+		<ul>
+			<li><a href="mobilniservisindex.html">Početna</a></li>
+			<li><a href="onama.html">O nama</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+		</ul>
+	</div>
+	<a href="http://www.w3schools.com" target="_blank"
+onmouseover="mouseOver()"
+onmouseout="mouseOut()">
+<img border="0" alt="Visit W3Schools!" src="posta.jpg" name="b1" width="66" height="66"/></a>
+<div class="kontejner">
+	<img src="merkur.png" id="anim">
+			<script>
+ 				anim.onclick = function() {
+ 				let start = Date.now();
+ 				let timer = setInterval(function() {
+ 				let timePassed = Date.now() - start;
+				anim.style.top = timePassed / 5 + 'px';
+				if (timePassed > 700) clearInterval(timer);
+				 }, 20);
+					 }
+			</script>
+	<div class="onama">
+		<h3>O nama</h3>
+		<p>Mobilni servis Merkur je nastao 2014. godine.Do dan danas servis Merkur posjeduje 7 poslovnica sirom Srbije (Beograd,Novi Sad,Nis,Kragujevac,Valjevo,Jagodina i Uzice).U buducnosti se planira otvaranje poslovnica i u drugim drzavama. Nase usluge su uvek na nivou i do sada nismo imali losa iskustva sa kupcima/korisnicima.Posjetite nasu poslovnicu i uvjerite se zasto smo najbolji.</p>
+		<br>
+		<h3>Adresa</h3>
+		<p>Jove Ilića 154, Voždovac</p>
+		<h3>Kontakt telefon:</h3>
+		<p>+381 63 677 9001</p>
+		<h3>E-mail adresa:</h3>
+		<p>mobliniservismerkur@gmail.com</p>
+	</div>
+	<div class="kontejner">
+		<h2>MARKE TELEFONA U NAŠIM POSLOVNICAMA</h2>
+		<div class="novo">
+			<div class="jedan">
+				<img src="apple.png">
+			</div>
+			<div class="jedan">
+				<img src="huawei.png">
+			</div>
+			<div class="jedan">
+				<img src="samsung.jpg">
+			</div>
+		</div>
+		<div class="novo">	
+			<div class="jedan">
+				<img src="nokia.jpg">
+			</div>
+			<div class="jedan">
+				<img src="tesla.jpg">
+			</div>
+			<div class="jedan">
+				<img src="xiaomi.png">
+			</div>
+		</div>
+	</div>
+	<div class="futer">
+		<p>Copyright by Sasa Miljatovic</p>
+	</div>
+</body>
+</html>

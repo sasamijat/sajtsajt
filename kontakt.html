@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mobilni servis Merkur</title>
+	<link rel="stylesheet" href="csskod.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="script.js">
+function mouseOver()
+{
+document.b1.src ="posta.jpg"
+}
+function mouseOut()
+{
+document.b1.src ="posta2.jpg"
+}
+</script>
+ 
+</head>
+<body>
+
+	<div class="nav">
+		<img src="mobilni.png">
+		<ul>
+			<li><a href="mobilniservisindex.html">Početna</a></li>
+			<li><a href="onama.html">O nama</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+		</ul>
+	</div>
+	<a href="http://www.w3schools.com" target="_blank"
+onmouseover="mouseOver()"
+onmouseout="mouseOut()">
+<img border="0" alt="Visit W3Schools!" src="posta.jpg" name="b1" width="66" height="66"/></a>
+<div class="kontejner">
+	<img src="merkur.png" id="anim">
+			<script>
+ 				anim.onclick = function() {
+ 				let start = Date.now();
+ 				let timer = setInterval(function() {
+ 				let timePassed = Date.now() - start;
+				anim.style.top = timePassed / 5 + 'px';
+				if (timePassed > 700) clearInterval(timer);
+				 }, 20);
+					 }
+			</script>
+	<div class="kontakt">
+		<div class="forma">
+			<form>
+				<fieldset>
+					<legend>Rezervišite termin</legend>
+					<p>Vaše ime i prezime:</p>
+					<input type="text" placeholder="Vaše ime i prezime">
+					<p>Vaša e-mail adresa:</p>
+					<input type="e-mail" placeholder="Vaša e-mail adresa">
+					<p>Marka telefona:</p>
+					<input type="radio" name="marka">Tesla
+					<input type="radio" name="marka">Samsung
+					<input type="radio" name="marka">Apple
+					<input type="radio" name="marka">Htc
+					<input type="radio" name="marka">Huawei
+					<input type="radio" name="marka">Xiami
+					<input type="radio" name="marka">Nokia
+					<input type="radio" name="marka">Motorola
+					<input type="radio" name="marka">LG
+					<p>Želite uslugu:</p>
+					<input type="checkbox">Servis telefona
+					<input type="checkbox">Kupovina telefona
+					<input type="checkbox">Kupovina pomocnih predmeta
+					<p>Izaberite datum i vreme:</p>
+					<input class="ime" type="datetime-local" placeholder="Datum i vreme" id="datum" value="2020-06-08T08:30">
+					<p>Ukoliko imate neku napomenu, molimo Vas napišite nam u sledećem polju.</p>
+					<textarea cols="90" rows="6"></textarea>
+					<br>
+					
+					<input type="submit" value="Hvala!" id="dugme">
+					<script src="script.js"></script>
+				</fieldset>
+			</form>
+			<br>
+			<br>
+			<iframe id="mapa" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=sr&amp;geocode=&amp;q=jove+ilica+154&amp;aq=&amp;sll=38.891033,33.222656&amp;sspn=56.11554,135.263672&amp;t=m&amp;ie=UTF8&amp;hq=jove+ilica+154&amp;hnear=&amp;radius=15000&amp;ll=44.772722,20.475136&amp;spn=0.071946,0.071946&amp;output=embed"></iframe>
+<br /><small><a id="ime" href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=sr&amp;geocode=&amp;q=jove+ilica+154&amp;aq=&amp;sll=38.891033,33.222656&amp;sspn=56.11554,135.263672&amp;t=m&amp;ie=UTF8&amp;hq=jove+ilica+154&amp;hnear=&amp;radius=15000&amp;ll=44.772722,20.475136&amp;spn=0.071946,0.071946" 
+style="color:white;text-align:center;padding-left:45%"></a></small>
+	</br>
+		</div>
+	</div>
+		
+
+	</div>
+	
+	<div class="futer">
+		<p>Copyright by Sasa Miljatovic</p>
+	</div>
+</body>
+</html>

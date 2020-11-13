@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mobilni servis Merkur</title>
+	<link rel="stylesheet" href="csskod.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<script>
+	function poruka(){
+	alert("Dobrodošli!");
+	}	
+	</script>
+	<script type="text/javascript" src="script.js">
+function mouseOver()
+{
+document.b1.src ="posta.jpg"
+}
+function mouseOut()
+{
+document.b1.src ="posta2.jpg"
+}
+</script>
+
+</head>
+<body onload="poruka()">
+	<div class="nav">
+		<img src="mobilni.png">
+		<ul>
+			<li><a href="mobilniservisindex.html">Početna</a></li>
+			<li><a href="onama.html">O nama</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+		</ul>
+	</div>
+	<div class="posta">
+		<a href="http://www.w3schools.com" target="_blank"
+		onmouseover="mouseOver()"
+		onmouseout="mouseOut()">
+		<img border="0" alt="Visit W3Schools!" src="posta.jpg" name="b1" width="66" height="66"/></a>
+</div>
+	<div class="kontejner">
+	<img src="merkur.png" id="anim">
+			<script>
+ 				anim.onclick = function() {
+ 				let start = Date.now();
+ 				let timer = setInterval(function() {
+ 				let timePassed = Date.now() - start;
+				anim.style.top = timePassed / 5 + 'px';
+				if (timePassed > 700) clearInterval(timer);
+				 }, 20);
+					 }
+			</script>
+		<h1>Mobilni servis Merkur</h1>
+		<br>
+		<br>
+		<h2>Naše usluge podrazumevaju</h2>
+		<div class="novo">
+			<div class="jedan">
+				<h4>Servis i popravka mobilnih telefona</h4>
+				<p>U nasem servisu nudimo najbolje usluge za sve korisnike mobilnih telefona uz garanciju.</p>
+			</div>
+			<div class="jedan">
+				<h4>Prodaja mobilnih telefona</h4>
+				<p>U servisu Merkur nudimo veliki asortiman mobilnih telefona svih proizvodjaca sa garancijom od 2 do 4 godine na odredjeni artikal.</p>
+			</div>
+			<div class="jedan">
+				<h4>Prodaja predmeta za mobilne/racunare</h4>
+				<p>Pogledajte ponudu predmeta koji olaksavaju rad sa mobilnim telefonima,racunarima i ostalom tehnikom.</p>
+			</div>
+		</div>
+	</div>
+	<div class="futer">
+		<p>Copyright by Sasa Miljatovic</p>
+	</div>
+</body>
+</html>
