@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="csskod.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 	<link rel="icon" href="ikonice/ikonica.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
 	<script>
 	function poruka(){
 	alert("Dobrodošli!");
@@ -27,8 +28,21 @@ document.b1.src ="posta2.jpg"
 
 </head>
 <body onload="poruka()">
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-share-button" 
+data-href="https://github.com/sasamijat/sajtsajt" 
+data-layout="button_count">
+</div>
 	<div class="nav">
-		<img src="mobilni.png" alt="Logo telefona">
+		<img src="mobilni.png" alt="mobilni">
 		<ul>
 			<li><a href="index.html">Početna</a></li>
 			<li><a href="onama.html">O nama</a></li>
@@ -42,7 +56,7 @@ document.b1.src ="posta2.jpg"
 		<img border="0" alt="Visit W3Schools!" src="posta.jpg" name="b1" width="66" height="66"/></a>
 </div>
 	<div class="kontejner">
-	<img src="merkur.png" alt="Logo servisa" id="anim">
+	<img src="merkur.png" alt="merkur" id="anim">
 			<script>
  				anim.onclick = function() {
  				let start = Date.now();
